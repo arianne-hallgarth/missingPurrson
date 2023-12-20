@@ -1,26 +1,52 @@
-# Missing Purrson Documentation
+# Missing Purrson
 
-### MVP
+## Dev Academy final group project
 
-Cats can be fickle creatures and are known to occassionally take a hiatus. The heartache endured by their owners is all-consuming and leads to desperation. We've all seen posters stuck around of missing pets, their reach is limited, and hope wanes much like the sad paper that unpeels in the rain... Aside from conventional social media/forums, there's no attractive dedicated online space to post about your awol-kitty troubles. A team of developers has taken it upon themselves to address this need. And so, we present Missing Purrson; the site to help cat owners reunite with their furry friends.
+## Setup
 
-Our MVP will allow a user to:
+Run the following commands in your terminal:
+
+```sh
+npm install
+npm run knex migrate:latest
+npm run knex seed:run
+```
+
+To run in development:
+
+```sh
+npm run dev
+```
+
+## Preface
+
+This was our final project at Dev Academy. I was the Team Lead, which involved facilitating meetings, leading the planning sessions, managing the team’s workload and making key decisions about developing a high-quality product on time. You can view a recording of the project showcase here: https://www.youtube.com/watch?v=x1VW2teDogw&t=580s&ab_channel=DevAcademyAotearoa.
+
+## Product background
+
+Cats can be fickle creatures and are known to occassionally take a hiatus. The heartache endured by their owners is all-consuming and leads to desperation. We've all seen posters stuck around of missing pets, their reach is limited, and hope wanes much like the sad paper that unpeels in the rain... Aside from conventional social media/forums, there's no attractive dedicated online space to post about your awol-kitty troubles. A team of developers has taken it upon themselves to address this need. And so, we present Missing Purrson; the site to help cat owners post details of their missing cats and sighting information to reunite with their furry friends.
+
+## MVP
+
+Allow users to:
 
 - view a list of cats that are currently missing.
 - use a form to upload a cat profile with details of their missing kitty (including a photo).
 - view & record sightings of missing cats.
 
-As stretch, our website will allow users to:
+## Stretch
+
+Allow users to:
 
 - pin the location of where they have sighted a missing cat on a map (using the Google Maps Api).
 - register, login and logout of their account using auth0 authentication.
 
-The tech we will use.
+## The Tech
 
-- the full-stack we have learnt at Dev Academy.
+- the full-stack learnt at Dev Academy.
 - google maps API.
 - auth0.
-- upload images to database using Multer middleware.
+- Multer middleware to upload images in the forms.
 
 ## User Stories
 
@@ -35,21 +61,20 @@ The tech we will use.
 Branches:
 main -> dev -> 'front-end + descriptor' and 'back-end + descriptor'.
 
-We will create pull requests to dev when features are finished on each branch. Anthony (Git Keeper) will manage the merges to dev.
+We will create pull requests to dev when features are finished on each branch. Anthony (Git Keeper) managed the merges to dev.
 
-The team will check whether:
+We had the following checks before merging to dev:
 
-- file and function naming conventions are maintained across the app
-- errors are well handled
-- no sensitive data is exposed on the client side
-- it passes npm run lint without any code-related warnings or errors
-- no unnecessary comments or console logs remain
-- that Types are used where applicable, and any Type issues should be resolved
-- user-facing updates (front end/ css crew) should be checked for accessibility concerns (using the WAVE tool) code meets naming conventions.
+- file and function naming conventions were maintained across the app
+- errors werw well-handled
+- no sensitive data was exposed on the client side
+- it passed 'npm run lint' without any code-related warnings or errors
+- no unnecessary comments or console logs remained
+- Types were used where applicable, and any Type issues were resolved
 
 ## KANBAN
 
-We will be using the digital KANBAN in our repo for the high-level planning. We will be using a physical KANBAN day-to-day
+We used the KANBAN in the github repo for planning the end-to-end tasks and a physical KANBAN to have visibility on the daily tasks.
 
 ## Roles
 
@@ -58,13 +83,13 @@ We will be using the digital KANBAN in our repo for the high-level planning. We 
 - Vibes Watcher - Ari
 - Git Keeper - Anthony
 
-We will divide the workload into front-end & back-end pairs, making sure to swap so that everyone can work on all layers of the stack. For now, the workload will be dividing as follows.
+## Workload distribution
 
 FRONT-END
 
 - CSS/HTML - Daniel
-- ReactQuery/Hooks - Daniel
-- Components - Daniel
+- ReactQuery - Daniel/Sofia
+- Components - Sofia/Ari
 - Client-side rendering - Sofia
 - ApiClient - Sofia
 
@@ -72,23 +97,23 @@ BACK-END
 
 - Models - Anthony/Ari
 - ApiClient - Anthony/Ari
-- Server Routes - Ari
+- Server Routes - Ari/Sofia
 - Database - Anthony
 
 STRETCH
 
-- External Api (google maps Api) - Daniel
-- Authentication - Sofia
+- External Api (google maps Api) - Daniel/Sofia
+- Authentication - Anthony
 
-## What might a day look like?
+## What our day looked like
 
-Turn up at 8:45am, start the day with a coffee and a standup. Set the daily KANBAN on the whiteboard. Take 5-10 mins in the morning and lunch to chat about the vibes. Work as a team to check the vibes during the day.
+Started at 8:45am with a coffee and a standup. Set the daily KANBAN on the whiteboard. Took 5-10 mins in the morning and lunch to chat about the vibes. Worked as a team to check the vibes during the day.
 
-Lunch break at 12:30pm, taking regular breaks when needed. Allow for independent rest outside of Dev Academy during the day.
+Lunch break at 12:30pm, taking regular breaks when needed.
 
-Provided we are clear on what we are doing (and not at meetings or taking breaks), we will be working on the tech during the day.
+Worked on the tech when not in meetings or taking breaks.
 
-Post-lunch check-in (to make sure we are all on the same page.)
+Post-lunch check-in (to make sure we were all on the same page with tasks).
 
 End of day retro to discuss what went well and what didn't.
 
@@ -96,9 +121,11 @@ End of day retro to discuss what went well and what didn't.
 
 https://www.figma.com/file/Zguxyv1UlY4WI6PdSUyk5q/Untitled?type=design&node-id=0%3A1&mode=design&t=6fiibhbiilWHnjfb-1
 
-## Database
+## Link to database diagram
 
-Link to the database diagram - https://dbdiagram.io/d/missingPurrson-6567dc953be14957870363a1
+https://dbdiagram.io/d/missingPurrson-6567dc953be14957870363a1
+
+## Database Tables
 
 ### Missing Cat Table
 
@@ -148,54 +175,54 @@ Link to the database diagram - https://dbdiagram.io/d/missingPurrson-6567dc953be
 
 ## Naming conventions
 
-| STACK LAYER | FILE/FOLDER NAME | FUNCTION NAME       |
-| ----------- | ---------------- | ------------------- |
-| Database    | db-cats.ts       | getAllMissingCatsDb |
-| Database    | db-cats.ts       | getOneMissingCatDb  |
-| Database    | db-cats.ts       | addMissingCatDb     |
-| Database    | db-cats.ts       | deleteMissingCatDb  |
-| Database    | db-cats.ts       | updateMissingCatDb  |
-|Database|db-cats.ts|addSightedCatDb|
-|Database|db-cats.ts|singleCatSightingsDb|
-| Database    | db-users.ts      | getUsersDb          |
-| Database    | db-users.ts      | getOneUserDb        |
-| API Client  | api-cats.ts      | getAllMissingCatsApi       |
-| API Client  | api-cats.ts      | getOneMissingCatApi        |
-| API Client  | api-cats.ts      | addMissingCatApi           |
-| API Client  | api-cats.ts      | deleteMissingCatApi        |
-| API Client  | api-cats.ts      | getCatSightingsApi        |
-| API Client  | api-cats.ts      | addCatSightingApi        |
-| Component   | components       | AddCatSightings     |
-| Component   | components       | AddMissingCat       |
-| Component   | components       | App                 |
-| Component   | components       | DeleteCat           |
-|Component|components|Home|
-| Component   | components       | Map                 |
-|Component|components|MissingCatList|
-| Component   | components       | Nav                 |
-| Component   | components       | SignIn              |
-| Component   | components       | SignOut             |
-| Component   | components       | SingleCat           |
-| Component   | components       | UpdateCat           |
+| STACK LAYER | FILE/FOLDER NAME | FUNCTION NAME        |
+| ----------- | ---------------- | -------------------- |
+| Database    | db-cats.ts       | getAllMissingCatsDb  |
+| Database    | db-cats.ts       | getOneMissingCatDb   |
+| Database    | db-cats.ts       | addMissingCatDb      |
+| Database    | db-cats.ts       | deleteMissingCatDb   |
+| Database    | db-cats.ts       | updateMissingCatDb   |
+| Database    | db-cats.ts       | addSightedCatDb      |
+| Database    | db-cats.ts       | singleCatSightingsDb |
+| Database    | db-users.ts      | getUsersDb           |
+| Database    | db-users.ts      | getOneUserDb         |
+| API Client  | api-cats.ts      | getAllMissingCatsApi |
+| API Client  | api-cats.ts      | getOneMissingCatApi  |
+| API Client  | api-cats.ts      | addMissingCatApi     |
+| API Client  | api-cats.ts      | deleteMissingCatApi  |
+| API Client  | api-cats.ts      | getCatSightingsApi   |
+| API Client  | api-cats.ts      | addCatSightingApi    |
+| Component   | components       | AddCatSightings      |
+| Component   | components       | AddMissingCat        |
+| Component   | components       | App                  |
+| Component   | components       | DeleteCat            |
+| Component   | components       | Home                 |
+| Component   | components       | Map                  |
+| Component   | components       | MissingCatList       |
+| Component   | components       | Nav                  |
+| Component   | components       | SignIn               |
+| Component   | components       | SignOut              |
+| Component   | components       | SingleCat            |
+| Component   | components       | UpdateCat            |
 
 We will be using snake_case for back-end function names, and camelCase for the front-end.
 
 ## Server API endpoints
 
-| METHOD | ENDPOINT                               | PROTECTED? | USAGE                                            | RETURNS                | DONE        |
-| ------ | -------------------------------------- | ---------- | ------------------------------------------------ | ---------------------- | ----------- |
-| GET    | `/api/v1/missingcats`                  | No         | gets all missing cats                            | an array of cats       | Working     |
-| GET    | `/api/v1/missingcats/singlecat/:catId` | No         | gets one missing cat                             | an object              | Working     |
-| POST   | `/api/v1/missingcats/addcat`           | Yes        | add a new missing cat                            | the newly uploaded cat | Working     |
-| DELETE | `/api/v1/missingcat/:catId`            | Yes        | delete an existing cat                           | nothing (status OK)    | In Progress |
-| PATCH  | `/api/v1/missingcat/:catId`            | Yes        | update an existing cat                           | the updated cat        | In Progress |
-| GET    | `/api/v1/sightedcats/singlecat/sighting/:catIdMc`                | No         | gets all sightings for an individual missing cat | an object              | Working     |
+| METHOD | ENDPOINT                                          | PROTECTED? | USAGE                                            | RETURNS                | DONE        |
+| ------ | ------------------------------------------------- | ---------- | ------------------------------------------------ | ---------------------- | ----------- |
+| GET    | `/api/v1/missingcats`                             | No         | gets all missing cats                            | an array of cats       | Working     |
+| GET    | `/api/v1/missingcats/singlecat/:catId`            | No         | gets one missing cat                             | an object              | Working     |
+| POST   | `/api/v1/missingcats/addcat`                      | Yes        | add a new missing cat                            | the newly uploaded cat | Working     |
+| DELETE | `/api/v1/missingcat/:catId`                       | Yes        | delete an existing cat                           | nothing (status OK)    | In Progress |
+| PATCH  | `/api/v1/missingcat/:catId`                       | Yes        | update an existing cat                           | the updated cat        | In Progress |
+| GET    | `/api/v1/sightedcats/singlecat/sighting/:catIdMc` | No         | gets all sightings for an individual missing cat | an object              | Working     |
 | POST   | `/api/v1/sightedcats/:catIdMc/add`                | Yes        | add a new sighting of a missing cat              | the newly uploaded cat | Working     |
-| PATCH  | `/api/v1/sightedcats/:catIdMc`                | Yes        | update a sighted cat                             | the updated cat        | In Progress |
-| GET    | `/api/v1/users`                        | Yes        | gets a list of all users                         | an array of users      | Stretch     |
-| GET    | `/api/v1/map`                          | No         | gets map data from external API                  | TBC                    | Stretch     |
-| POST   | `/api/v1/auth/login`                   | Yes        | log in a user                                    | the user's JWT token   | Stretch     |
-| POST   | `/api/v1/auth/register`                | Yes        | register a user                                  | the user's JWT token   | Stretch     |
+| PATCH  | `/api/v1/sightedcats/:catIdMc`                    | Yes        | update a sighted cat                             | the updated cat        | In Progress |
+| GET    | `/api/v1/users`                                   | Yes        | gets a list of all users                         | an array of users      | Stretch     |
+| GET    | `/api/v1/map`                                     | No         | gets map data from external API                  | TBC                    | Stretch     |
+| POST   | `/api/v1/auth/login`                              | Yes        | log in a user                                    | the user's JWT token   | Stretch     |
+| POST   | `/api/v1/auth/register`                           | Yes        | register a user                                  | the user's JWT token   | Stretch     |
 
 ## Views Client Side
 
@@ -205,7 +232,7 @@ We will be using snake_case for back-end function names, and camelCase for the f
 | Missing Cats       | yes  | shows images and some details of all the missing cats from the database that the user can click                                                                                                    |
 | List a Missing Cat | yes  | shows a form to submit missing cat details and upload an image to the database. Includes disclaimer about sharing personal information.                                                            |
 | Cat Profile        | yes  | shows all the details of each missing cat (images, name, breed, age, last-seen/area, owner information)                                                                                            |
-| Cat Sightings       | yes  | allows a user to record whether they have seen a missing cat. Includes a form for a user to record the place, time, photo, comment/description of the sighting. Includes google map api as stretch |
+| Cat Sightings      | yes  | allows a user to record whether they have seen a missing cat. Includes a form for a user to record the place, time, photo, comment/description of the sighting. Includes google map api as stretch |
 | Register           | no   | linked from the home page. View for the user to create an account                                                                                                                                  |
 | Login              | no   | linked from the home page. View for the user to log into their account                                                                                                                             |
 
