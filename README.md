@@ -20,7 +20,7 @@ npm run dev
 
 ## Preface
 
-This was our final project at Dev Academy. I was the Team Lead, which involved facilitating meetings, leading the planning sessions, managing the team’s workload and making key decisions about developing a high-quality product on time. You can view a recording of the project showcase here: https://www.youtube.com/watch?v=x1VW2teDogw&t=580s&ab_channel=DevAcademyAotearoa.
+This was our final project at Dev Academy. I was the team's vibes watcher, who is responsible for making sure that everyone feels included and heard, I worked on most of the backend of this project together with one of my groupmate Anthony. I also worked on one of the stretches of this project which shows the lists of found cats. You can view a recording of the project showcase here: https://www.youtube.com/watch?v=x1VW2teDogw&t=580s&ab_channel=DevAcademyAotearoa.
 
 ## Product background
 
